@@ -291,7 +291,7 @@ data:
               imagePullPolicy: Always
               env:
               - name: UPERF_SSH_PORT
-                value: "${UPERF_SSHD_PORT}"
+                value: "${{UPERF_SSHD_PORT}}"
               securityContext: {}
               volumeMounts:
               - name: pbench-ssh
